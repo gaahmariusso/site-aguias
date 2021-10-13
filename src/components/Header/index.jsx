@@ -5,13 +5,11 @@ import styles from './styles.module.css'
 export default function Header(props) {
     return (
         <div className={styles.headerContainer}>
-            <header>
-                <img src="/Mascote.jpg" alt="AguiasDoBosque" width={180} height={120} />
-
-                <h4>{props.title}</h4>
+            <header className={styles.header}>
+                <img src="/Mascote.png" alt="AguiasDoBosque" width={120} height={120} borderRadius={120 / 2} />
             </header>
 
-            <navbar>
+            <navbar className={styles.navbar}>
                 <Link href="/Home">
                     Home
                 </Link>
@@ -31,6 +29,10 @@ export default function Header(props) {
                     Calendário
                 </Link>
             </navbar>
+
+            <div className={styles.title}>
+                <h1>{props.title}</h1>
+            </div>
         </div>
     );
 }

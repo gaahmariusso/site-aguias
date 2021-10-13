@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header title="Aguias do Bosque Futebol & Cerveja" />
+      <Header title="Águias do Bosque Futebol & Cerveja" />
 
       <main className={styles.main}>
         <h1 className={styles.title}>

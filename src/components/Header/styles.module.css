@@ -1,22 +1,24 @@
 .headerContainer {
-    background: red;
-    /* height: 6.5rem; */
-  
-    display: flex;
-    align-items: center;
-  
-    padding: 2rem 4rem;
-  
-    border-bottom: 1px solid var(--gray-100);
-  
-    /* p {
-      margin-left: 2rem;
-      padding: 0.25rem 0 0.25rem 2rem;
-      border-left: 1px solid var(--gray-100);
-    }
-  
-    span {
-      margin-left: auto;
-      text-transform: capitalize;
-    } */
-  }  
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: red;  
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-left: 5%;
+}
+
+.navbar a {
+  margin-right: 20px;
+}
+
+.title {
+  color: white;
+  margin: 0 0 auto 15%;
+}
