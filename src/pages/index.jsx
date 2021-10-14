@@ -1,6 +1,7 @@
 import Head from '../components/Head'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+
 import styles from '../styles/Home.module.css'
 
 export default function Home() {

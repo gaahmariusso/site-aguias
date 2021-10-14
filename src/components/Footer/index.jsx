@@ -1,22 +1,54 @@
-import styles from './styles.module.css'
+import { FaWhatsapp } from 'react-icons/fa'
+import { FaTelegramPlane } from 'react-icons/fa'
+import { FaRegEnvelope } from 'react-icons/fa'
 import Iframe from 'react-iframe'
 
-export default function Header() {
+import styles from './styles.module.css'
+
+export default function Footer() {
     return (
         <footer className={styles.footerContainer}>
-            <h2>Contatos</h2>
-            <p>+ 55 11 9 8839 8389</p>
-            <p>+ 55 11 9 8839 8389</p>
-            <p>aguiasdobosquefc@gmail.com</p>
-
-            <h2>Localizacao</h2>
-            <Iframe url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.977134261554!2d-46.583103685021335!3d-23.605152984661185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5c6269d21fc5%3A0x139902f84484cd59!2sCDC%20UCRA%20-%20Uni%C3%A3o%20Cultural%20e%20Recreativa%20Amizade!5e0!3m2!1spt-BR!2sbr!4v1633910073338!5m2!1spt-BR!2sbr"
-                width="300"
-                height="150"
-                id="localization"
-                className="localization"
-                display="initial"
-                position="relative" />
+            <div className={styles.row}>
+                {/* Coluna 1 */}
+                <div className={styles.col}>
+                    <h4>Contatos</h4>
+                    <ul className={styles.listContact}>
+                        <li>
+                            <i className={styles.icon}>
+                                <FaWhatsapp />
+                            </i>
+                        + 55 11 9 8839 8389
+                        </li>
+                        <li>
+                            <i className={styles.icon}>
+                                <FaTelegramPlane />
+                            </i>
+                            + 55 11 9 8839 8389</li>
+                        <li>
+                            <i className={styles.icon}>
+                                <FaRegEnvelope />
+                            </i>
+                            aguiasdobosquefc@gmail.com</li>
+                    </ul>
+                </div>
+                {/* Coluna 2 */}
+                <div className={styles.col}>
+                    <h4>Localizacao</h4>
+                    <Iframe url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.977134261554!2d-46.583103685021335!3d-23.605152984661185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5c6269d21fc5%3A0x139902f84484cd59!2sCDC%20UCRA%20-%20Uni%C3%A3o%20Cultural%20e%20Recreativa%20Amizade!5e0!3m2!1spt-BR!2sbr!4v1633910073338!5m2!1spt-BR!2sbr"
+                        width="500"
+                        height="300"
+                        id="localization"
+                        className="localization"
+                        display="initial"
+                        position="relative" />
+                </div>
+            </div>
+            <hr />
+            <div className={styles.row}>
+                <p>
+                    &copy;{new Date().getFullYear()} Gabriel Mariusso | All right reserved | Terms Of Service | Privacy
+                </p>
+            </div>
         </footer>
     );
 }
