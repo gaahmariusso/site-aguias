@@ -33,6 +33,8 @@ export default function Header(props) {
             <div className={styles.title}>
                 <h1>{props.title}</h1>
             </div>
+            <div className={styles.line}>
+            </div>
         </div>
     );
 }
