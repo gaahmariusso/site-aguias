@@ -22,3 +22,10 @@
   color: white;
   margin: 0 0 auto 15%;
 }
+
+.line {
+	display: block;
+	width: 100%;
+	height: 5px;
+	background: linear-gradient(90deg, rgb(107,195,146) 0%, rgb(107,195,146) 100%);
+}
