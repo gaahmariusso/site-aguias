@@ -6,7 +6,7 @@ export default function Header(props) {
     return (
         <div className={styles.headerContainer}>
             <header className={styles.header}>
-                <img src="/Mascote.png" alt="AguiasDoBosque" width={120} height={120} />
+                <img src="/Mascote.png" alt="AguiasDoBosque" width={100} height={90} />
             </header>
 
             <navbar className={styles.navbar}>
